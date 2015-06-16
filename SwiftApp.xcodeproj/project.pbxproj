@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5C245DFA1B26A64100E1A570 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C245DF91B26A64100E1A570 /* Colors.swift */; };
 		5CE1135D1B2545BB0094B90B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1135C1B2545BB0094B90B /* AppDelegate.swift */; };
-		5CE1135F1B2545BB0094B90B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1135E1B2545BB0094B90B /* ViewController.swift */; };
+		5CE1135F1B2545BB0094B90B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1135E1B2545BB0094B90B /* LoginController.swift */; };
 		5CE113621B2545BB0094B90B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE113601B2545BB0094B90B /* Main.storyboard */; };
 		5CE113641B2545BB0094B90B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CE113631B2545BB0094B90B /* Images.xcassets */; };
 		5CE113671B2545BB0094B90B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CE113651B2545BB0094B90B /* LaunchScreen.xib */; };
@@ -31,7 +31,7 @@
 		5CE113571B2545BB0094B90B /* SwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE1135B1B2545BB0094B90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CE1135C1B2545BB0094B90B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5CE1135E1B2545BB0094B90B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5CE1135E1B2545BB0094B90B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		5CE113611B2545BB0094B90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CE113631B2545BB0094B90B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5CE113661B2545BB0094B90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				5C245DF81B26A5D100E1A570 /* Extentions */,
 				5C245DF51B26A58900E1A570 /* Entities */,
 				5CE1135C1B2545BB0094B90B /* AppDelegate.swift */,
-				5CE1135E1B2545BB0094B90B /* ViewController.swift */,
+				5CE1135E1B2545BB0094B90B /* LoginController.swift */,
 				5CE113601B2545BB0094B90B /* Main.storyboard */,
 				5CE113631B2545BB0094B90B /* Images.xcassets */,
 				5CE113651B2545BB0094B90B /* LaunchScreen.xib */,
@@ -232,7 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CE1135F1B2545BB0094B90B /* ViewController.swift in Sources */,
+				5CE1135F1B2545BB0094B90B /* LoginController.swift in Sources */,
 				5C245DFA1B26A64100E1A570 /* Colors.swift in Sources */,
 				5CE1135D1B2545BB0094B90B /* AppDelegate.swift in Sources */,
 			);
