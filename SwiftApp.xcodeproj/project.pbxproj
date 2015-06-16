@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C245DFA1B26A64100E1A570 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C245DF91B26A64100E1A570 /* Colors.swift */; };
 		5CE1135D1B2545BB0094B90B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1135C1B2545BB0094B90B /* AppDelegate.swift */; };
 		5CE1135F1B2545BB0094B90B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1135E1B2545BB0094B90B /* ViewController.swift */; };
 		5CE113621B2545BB0094B90B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE113601B2545BB0094B90B /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C245DF91B26A64100E1A570 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5CE113571B2545BB0094B90B /* SwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE1135B1B2545BB0094B90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CE1135C1B2545BB0094B90B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C245DF51B26A58900E1A570 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		5C245DF81B26A5D100E1A570 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				5C245DF91B26A64100E1A570 /* Colors.swift */,
+			);
+			name = Extentions;
+			sourceTree = "<group>";
+		};
 		5CE1134E1B2545BB0094B90B = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +94,8 @@
 		5CE113591B2545BB0094B90B /* SwiftApp */ = {
 			isa = PBXGroup;
 			children = (
+				5C245DF81B26A5D100E1A570 /* Extentions */,
+				5C245DF51B26A58900E1A570 /* Entities */,
 				5CE1135C1B2545BB0094B90B /* AppDelegate.swift */,
 				5CE1135E1B2545BB0094B90B /* ViewController.swift */,
 				5CE113601B2545BB0094B90B /* Main.storyboard */,
@@ -156,7 +175,8 @@
 		5CE1134F1B2545BB0094B90B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Lancer Lancer";
 				TargetAttributes = {
 					5CE113561B2545BB0094B90B = {
@@ -213,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CE1135F1B2545BB0094B90B /* ViewController.swift in Sources */,
+				5C245DFA1B26A64100E1A570 /* Colors.swift in Sources */,
 				5CE1135D1B2545BB0094B90B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +297,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -342,6 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -352,6 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -370,6 +394,7 @@
 				);
 				INFOPLIST_FILE = SwiftAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftApp.app/SwiftApp";
 			};
@@ -385,6 +410,7 @@
 				);
 				INFOPLIST_FILE = SwiftAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.test.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftApp.app/SwiftApp";
 			};
@@ -409,6 +435,7 @@
 				5CE113781B2545BB0094B90B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5CE113791B2545BB0094B90B /* Build configuration list for PBXNativeTarget "SwiftAppTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +444,7 @@
 				5CE1137B1B2545BB0094B90B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
