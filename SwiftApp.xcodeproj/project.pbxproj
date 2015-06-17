@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5C245DFA1B26A64100E1A570 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C245DF91B26A64100E1A570 /* Colors.swift */; };
+		5C659D771B31CFEB007E8FDC /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C659D761B31CFEB007E8FDC /* TextField.swift */; };
+		5C75FDBF1B311B6A0032AB99 /* CustomUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C75FDBE1B311B6A0032AB99 /* CustomUiViewController.swift */; };
 		5CE1135D1B2545BB0094B90B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1135C1B2545BB0094B90B /* AppDelegate.swift */; };
 		5CE1135F1B2545BB0094B90B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE1135E1B2545BB0094B90B /* LoginController.swift */; };
 		5CE113621B2545BB0094B90B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CE113601B2545BB0094B90B /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		5C245DF91B26A64100E1A570 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5C659D761B31CFEB007E8FDC /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		5C75FDBE1B311B6A0032AB99 /* CustomUiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUiViewController.swift; sourceTree = "<group>"; };
 		5CE113571B2545BB0094B90B /* SwiftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE1135B1B2545BB0094B90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CE1135C1B2545BB0094B90B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				5C245DF91B26A64100E1A570 /* Colors.swift */,
+				5C659D761B31CFEB007E8FDC /* TextField.swift */,
 			);
 			name = Extentions;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 				5CE113631B2545BB0094B90B /* Images.xcassets */,
 				5CE113651B2545BB0094B90B /* LaunchScreen.xib */,
 				5CE1135A1B2545BB0094B90B /* Supporting Files */,
+				5C75FDBE1B311B6A0032AB99 /* CustomUiViewController.swift */,
 			);
 			path = SwiftApp;
 			sourceTree = "<group>";
@@ -235,6 +241,8 @@
 				5CE1135F1B2545BB0094B90B /* LoginController.swift in Sources */,
 				5C245DFA1B26A64100E1A570 /* Colors.swift in Sources */,
 				5CE1135D1B2545BB0094B90B /* AppDelegate.swift in Sources */,
+				5C659D771B31CFEB007E8FDC /* TextField.swift in Sources */,
+				5C75FDBF1B311B6A0032AB99 /* CustomUiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
