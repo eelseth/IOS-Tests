@@ -12,15 +12,18 @@ class LoginController: CustomUiViewController {
     
     @IBOutlet weak var user: UITextField!
     @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var progress: UIActivityIndicatorView!
 
     @IBAction func loginUser(sender: UIButton) {
         self.user.resignFirstResponder()
         self.password.resignFirstResponder()
-        validateForm()
+        if validateForm(){
+            validateUser()
+        }
     }
     
     func validateForm() -> Bool{
-        if self.user.text == ""{
+        if self.user.text?.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()) == ""{
             self.user.error("")
             return false
         }else{
@@ -33,6 +36,29 @@ class LoginController: CustomUiViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.user.defaultStyle()
         self.password.secureTextEntry = true
+    }
+    
+    func validateUser() -> Bool{
+        /*
+        let userRequest = NSURLSession.sharedSession().dataTaskWithURL(urlAuthentication!){
+            (data, response, error) in
+                print(NSString(data: data!, encoding: NSUTF8StringEncoding))
+        }
+        userRequest!.resume()*/
+        self.progress.hidden = false
+        self.progress.startAnimating()
+        let urlAuthentication = "http://osiapppre02.colsanitas.com/osi/api/authenticateMobile/documentType/1/document/" + self.user.text! + "/password/" + self.password.text! 
+        print(urlAuthentication)
+        let task = NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: urlAuthentication)!) {
+            (data, response, error) in
+            print(NSString(data: data!, encoding: NSUTF8StringEncoding)!)
+            dispatch_async(dispatch_get_main_queue()){
+                self.progress.stopAnimating()
+            }
+        }
+        
+        task!.resume()
+        return false
     }
 
        

@@ -135,10 +135,14 @@
                                     <outlet property="delegate" destination="yLH-kf-Lbn" id="Zp4-RN-F0f"/>
                                 </connections>
                             </textField>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="7Xe-uW-qjr">
+                                <rect key="frame" x="291" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="GpU-jc-ZNL" firstAttribute="centerX" secondItem="ywN-RF-3FN" secondAttribute="centerX" id="6aS-ic-5ih"/>
+                            <constraint firstItem="wZa-8E-yUz" firstAttribute="top" secondItem="7Xe-uW-qjr" secondAttribute="bottom" constant="15" id="6yE-b4-b0p"/>
                             <constraint firstItem="CgO-dJ-Fgb" firstAttribute="centerX" secondItem="ywN-RF-3FN" secondAttribute="centerX" id="9ah-MD-f8Q"/>
                             <constraint firstItem="Wrx-pv-aq8" firstAttribute="centerX" secondItem="CgO-dJ-Fgb" secondAttribute="centerX" id="DWf-HG-ZgW"/>
                             <constraint firstItem="wZa-8E-yUz" firstAttribute="top" secondItem="BPF-5I-29l" secondAttribute="bottom" constant="60" id="Eo8-PP-VrN"/>
@@ -154,12 +158,14 @@
                             <constraint firstItem="CgO-dJ-Fgb" firstAttribute="width" secondItem="wZa-8E-yUz" secondAttribute="width" id="fmg-OB-fXN"/>
                             <constraint firstItem="BPF-5I-29l" firstAttribute="top" secondItem="GpU-jc-ZNL" secondAttribute="bottom" constant="17" id="kI6-gY-mw4"/>
                             <constraint firstItem="Wrx-pv-aq8" firstAttribute="top" secondItem="ywN-RF-3FN" secondAttribute="top" id="oj0-oo-eEt"/>
+                            <constraint firstItem="7Xe-uW-qjr" firstAttribute="centerX" secondItem="ywN-RF-3FN" secondAttribute="centerX" id="pdV-fk-fAh"/>
                             <constraint firstItem="BPF-5I-29l" firstAttribute="centerX" secondItem="ywN-RF-3FN" secondAttribute="centerX" id="u1V-SS-RtQ"/>
                             <constraint firstItem="wZa-8E-yUz" firstAttribute="centerY" secondItem="ywN-RF-3FN" secondAttribute="centerY" constant="40" id="yDh-4Q-OkE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="password" destination="CgO-dJ-Fgb" id="l7U-zG-drc"/>
+                        <outlet property="progress" destination="7Xe-uW-qjr" id="FKt-BL-B30"/>
                         <outlet property="user" destination="wZa-8E-yUz" id="Ufs-vu-C0t"/>
                     </connections>
                 </viewController>
