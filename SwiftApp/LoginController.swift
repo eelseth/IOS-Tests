@@ -38,7 +38,7 @@ class LoginController: CustomUiViewController {
         self.password.secureTextEntry = true
     }
     
-    func validateUser() -> Bool{
+    /*func validateUser() -> Bool{
         /*
         let userRequest = NSURLSession.sharedSession().dataTaskWithURL(urlAuthentication!){
             (data, response, error) in
@@ -52,16 +52,35 @@ class LoginController: CustomUiViewController {
         let task = NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: urlAuthentication)!) {
             (data, response, error) in
             print(NSString(data: data!, encoding: NSUTF8StringEncoding)!)
-            dispatch_async(dispatch_get_main_queue()){
+            dispatch_async(dispatch_get_main_queue()){		
                 self.progress.stopAnimating()
             }
         }
         
         task!.resume()
         return false
+    }*/
+    
+    func validateUser() -> Bool{
+        self.progress.hidden = false
+        self.progress.startAnimating()
+        print("startedNetworking")
+        let urlAuthentication = "http://osiapppre02.colsanitas.com/osi/api/authenticateMobile/documentType/1/document/" + self.user.text! + "/password/" + self.password.text!
+        let managerNetworking = AFHTTPRequestOperationManager()
+        managerNetworking.GET(urlAuthentication,
+            parameters: nil,
+            success: { (operation: AFHTTPRequestOperation!, response: AnyObject!) in
+                print(""+response.description)
+                dispatch_async(dispatch_get_main_queue()){
+                    self.progress.stopAnimating()
+                }
+            }) { (operation: AFHTTPRequestOperation!, error: NSError!) in
+                print(""+error.localizedDescription)
+        }
+        return false
     }
 
-       
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
